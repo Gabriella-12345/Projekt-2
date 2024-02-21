@@ -1,56 +1,254 @@
-.box-grid{
-    display: grid;  /* grid */
-    grid-template-columns: 1fr, 2fr, 1fr;
-    grid-template-rows: 1fr, 1fr, 2fr; 
- }
- 
- h1{
-     color: black;
-     text-align: center; /* Rubrik */
-     grid-column: 1/2;
-     grid-row: 1/2;
-     background-color:#cccccc;;
- }
- /* .bild1{
-     grid-template-columns: 1fr, 3fr ;
-     grid-template-rows: 1fr, 3fr;
-     grid-column: 1/2;
-     grid-row: 1/2;
- 
- } */
- 
- header{
-     border: 3px solid #274e13 ; /* Underrubrikerna, om oss, kundtjänst osv */
-     display: flex;
-     flex-direction: row;
-     justify-content:space-evenly;
-     grid-row: 2/3;
-     grid-column: 1/2;
-     
- }
- 
- .lower{
-     border: 3px solid #274e13 ; /*  Under Underrubrikerna, glasögon */
-     
-     display: flex;
-     flex-direction: row;
-     justify-content:space-evenly;
-     margin-left: 20px;
-     margin-right: 20px;
-     margin-top: 5px;
-     grid-row: 3/4;
-     grid-column: 1/2;
- 
- }
- 
- .glassogonlador{
-     display: grid;  /* grid */
-     grid-template-columns: 1fr
-     grid-template-rows: 1fr, 1fr; 
-     border:2px solid hotpink;
-     margin-top: 10px;
-     margin-left: 55px;
-     margin-right: 55px;
- 
- }
- 
+body{
+    background-image: url(./img/natur.webp);
+
+}
+
+.box-grid {
+   display: grid;  /* grid */
+   grid-template-columns: 1fr, 2fr, 1fr;
+   grid-template-rows: 1fr, 1fr, 2fr; 
+}
+
+h1 {
+    color: rgb(250, 240, 234);
+    text-align: center; /* Rubrik */
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 18%;
+    /* background-color:#cccccc;; */
+}
+.bild { 
+    /* logga bild */
+    grid-column: 1/2; 
+    grid-row: 1/2;
+    text-align: right;
+    max-width: 100px;
+    max-height: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-color: rgb(250, 240, 234);
+
+} 
+
+header {
+    border: 3px solid #274e13 ; /* Underrubrikerna, om oss, kundtjänst osv */
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: rgb(250, 240, 234);
+    
+    
+}
+
+.lower {
+    border: 3px solid #38761d ; /*  Under Underrubrikerna, glasögon */
+    background-color: rgb(250, 240, 234);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    grid-row: 3/4;
+    grid-column: 1/2;
+
+}
+
+.glasogonlador {
+    border:2px solid #cccccc;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    
+}
+.pristext {
+    text-align: center;
+    margin-right: 50%;
+    background-color:  rgb(250, 240, 234);
+}
+
+article img {
+    max-width: 200px;
+    height:auto
+    
+}
+article h2 {
+    border: 2px solid #274e13;
+    margin-left: 10%;
+    background-color: rgb(250, 240, 234);
+}
+
+/* Tablet -------------------------------------------------------------------------------------------------------*/
+@media(min-width:600px) {
+    body{
+        background-image: url(./img/natur.webp);
+    
+    }
+    
+    .box-grid {
+       display: grid;  /* grid */
+       grid-template-columns: 1fr, 2fr, 1fr;
+       grid-template-rows: 1fr, 1fr, 2fr; 
+    }
+    
+    h1 {
+        color: rgb(250, 240, 234);
+        text-align: center; /* Rubrik */
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-left: 18%;
+        /* background-color:#cccccc;; */
+    }
+    .bild { 
+        /* logga bild */
+        grid-column: 1/2; 
+        grid-row: 1/2;
+        text-align: right;
+        max-width: 100px;
+        max-height: auto;
+        margin-left: 5%;
+        margin-top: 5%;
+        background-color: rgb(250, 240, 234);
+    
+    } 
+    
+    header {
+        border: 3px solid #274e13 ; /* Underrubrikerna, om oss, kundtjänst osv */
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        background-color: rgb(250, 240, 234);
+        
+        
+    }
+    
+    .lower {
+        border: 3px solid #38761d ; /*  Under Underrubrikerna, glasögon */
+        background-color: rgb(250, 240, 234);
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 5px;
+        grid-row: 3/4;
+        grid-column: 1/2;
+    
+    }
+    
+    .glasogonlador {
+        border:2px solid #cccccc;
+        background-color: white;
+        margin-top: 10px;
+        margin-left: 70px;
+        margin-right: 70px;
+        
+    }
+    .pristext {
+        text-align: center;
+        margin-right: 50%;
+        background-color:  rgb(250, 240, 234);
+    }
+    
+    article img {
+        max-width: 200px;
+        height:auto
+        
+    }
+    article h2 {
+        border: 2px solid #274e13;
+        margin-left: 10%;
+        background-color:  rgb(250, 240, 234);
+    }
+}
+
+/* dator ----------------------------------------------------------------------------------------------------------*/
+@media(min-width:1025px) {
+    body{
+        background-image: url(./img/natur.webp);
+    
+    }
+    
+    .box-grid {
+       display: grid;  /* grid */
+       grid-template-columns: 1fr, 2fr, 1fr;
+       grid-template-rows: 1fr, 1fr, 2fr; 
+    }
+    
+    h1 {
+        color: rgb(250, 240, 234);
+        text-align: center; /* Rubrik */
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-left: 18%;
+        /* background-color:#cccccc;; */
+    }
+    .bild { 
+        /* logga bild */
+        grid-column: 1/2; 
+        grid-row: 1/2;
+        text-align: right;
+        max-width: 100px;
+        max-height: auto;
+        margin-left: 5%;
+        margin-top: 5%;
+        background-color: rgb(250, 240, 234);
+    
+    } 
+    
+    header {
+        border: 3px solid #274e13 ; /* Underrubrikerna, om oss, kundtjänst osv */
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        background-color: rgb(250, 240, 234);
+    
+    }
+    
+    .lower {
+        border: 3px solid #38761d ; /*  Under Underrubrikerna, glasögon */
+        background-color: rgb(250, 240, 234);
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 5px;
+        grid-row: 3/4;
+        grid-column: 1/2;
+    
+    }
+    
+    .glasogonlador {
+        border:2px solid #cccccc;
+        background-color: white;
+        margin-top: 10px;
+        margin-left: 70px;
+        margin-right: 70px;
+        
+    }
+    .pristext {
+        text-align: center;
+        margin-right: 50%;
+        background-color:  rgb(250, 240, 234);
+    }
+    
+    article img {
+        max-width: 200px;
+        height:auto
+        
+    }
+    article h2 {
+        border: 2px solid #274e13;
+        margin-left: 10%;
+        background-color: rgb(250, 240, 234);
+    }
+
+}
