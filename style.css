@@ -15,6 +15,7 @@ h1 {
     grid-column: 1/2;
     grid-row: 1/2;
     margin-left: 18%;
+    margin-top: 60px;
     /* background-color:#cccccc;; */
 }
 .bild { 
@@ -25,12 +26,12 @@ h1 {
     max-width: 100px;
     max-height: auto;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 15%;
     background-color: rgb(250, 240, 234);
 
 } 
 
-header {
+.header {
     border: 3px solid #274e13 ; /* Underrubrikerna, om oss, kundtjänst osv */
     display: flex;
     flex-direction: row;
@@ -38,7 +39,6 @@ header {
     grid-row: 2/3;
     grid-column: 1/2;
     background-color: rgb(250, 240, 234);
-    
     
 }
 
@@ -57,198 +57,78 @@ header {
 }
 
 .glasogonlador {
-    border:2px solid #cccccc;
+    border:2px solid #cccccc;    /*bild och text */
     background-color: white;
     margin-top: 10px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 50px;  
+    margin-right: 20px;
+    width: 70%;
     
 }
+.glasogonlador:hover{
+    border: 2px solid #274e13 ;
+}
+
 .pristext {
     text-align: center;
-    margin-right: 50%;
+    margin-right: 50%;                          /*pristext*/
     background-color:  rgb(250, 240, 234);
 }
 
 article img {
     max-width: 200px;
-    height:auto
-    
+    height:auto;
+    /* margin-left: 27%;
+    margin-top: 10%; */
+
 }
+
 article h2 {
     border: 2px solid #274e13;
     margin-left: 10%;
+    align-items: left;
     background-color: rgb(250, 240, 234);
+}
+.t{
+    /* beskrivning på glasögon */
+    margin-left: 10%;
 }
 
 /* Tablet -------------------------------------------------------------------------------------------------------*/
 @media(min-width:600px) {
-    body{
-        background-image: url(./img/natur.webp);
-    
-    }
-    
-    .box-grid {
-       display: grid;  /* grid */
-       grid-template-columns: 1fr, 2fr, 1fr;
-       grid-template-rows: 1fr, 1fr, 2fr; 
-    }
-    
-    h1 {
-        color: rgb(250, 240, 234);
-        text-align: center; /* Rubrik */
-        grid-column: 1/2;
-        grid-row: 1/2;
-        margin-left: 18%;
-        /* background-color:#cccccc;; */
-    }
-    .bild { 
-        /* logga bild */
-        grid-column: 1/2; 
-        grid-row: 1/2;
-        text-align: right;
-        max-width: 100px;
-        max-height: auto;
-        margin-left: 5%;
-        margin-top: 5%;
-        background-color: rgb(250, 240, 234);
-    
-    } 
-    
-    header {
-        border: 3px solid #274e13 ; /* Underrubrikerna, om oss, kundtjänst osv */
-        display: flex;
-        flex-direction: row;
-        justify-content:space-evenly;
-        grid-row: 2/3;
-        grid-column: 1/2;
-        background-color: rgb(250, 240, 234);
-        
-        
-    }
-    
-    .lower {
-        border: 3px solid #38761d ; /*  Under Underrubrikerna, glasögon */
-        background-color: rgb(250, 240, 234);
-        display: flex;
-        flex-direction: row;
-        justify-content:space-evenly;
+   .glasogonlador{
+        width: 40%;
         margin-left: 20px;
         margin-right: 20px;
-        margin-top: 5px;
-        grid-row: 3/4;
-        grid-column: 1/2;
-    
     }
-    
-    .glasogonlador {
-        border:2px solid #cccccc;
-        background-color: white;
+
+   main{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+   }
+   .bild{
         margin-top: 10px;
-        margin-left: 70px;
-        margin-right: 70px;
-        
-    }
-    .pristext {
-        text-align: center;
-        margin-right: 50%;
-        background-color:  rgb(250, 240, 234);
-    }
-    
-    article img {
-        max-width: 200px;
-        height:auto
-        
-    }
-    article h2 {
-        border: 2px solid #274e13;
-        margin-left: 10%;
-        background-color:  rgb(250, 240, 234);
-    }
+        margin-left: 30%;
+   }
+   .header, .lower{
+        font-size: larger;
+   }
 }
 
 /* dator ----------------------------------------------------------------------------------------------------------*/
 @media(min-width:1025px) {
-    body{
-        background-image: url(./img/natur.webp);
-    
+    .glasogonlador{
+        width: 28%;
+    }
+   .header:hover{
+        color: #cccccc;
+        background-color: #38761d;
+    }
+    .lower:hover{
+        color: #cccccc;
+        background-color: #38761d;
     }
     
-    .box-grid {
-       display: grid;  /* grid */
-       grid-template-columns: 1fr, 2fr, 1fr;
-       grid-template-rows: 1fr, 1fr, 2fr; 
-    }
-    
-    h1 {
-        color: rgb(250, 240, 234);
-        text-align: center; /* Rubrik */
-        grid-column: 1/2;
-        grid-row: 1/2;
-        margin-left: 18%;
-        /* background-color:#cccccc;; */
-    }
-    .bild { 
-        /* logga bild */
-        grid-column: 1/2; 
-        grid-row: 1/2;
-        text-align: right;
-        max-width: 100px;
-        max-height: auto;
-        margin-left: 5%;
-        margin-top: 5%;
-        background-color: rgb(250, 240, 234);
-    
-    } 
-    
-    header {
-        border: 3px solid #274e13 ; /* Underrubrikerna, om oss, kundtjänst osv */
-        display: flex;
-        flex-direction: row;
-        justify-content:space-evenly;
-        grid-row: 2/3;
-        grid-column: 1/2;
-        background-color: rgb(250, 240, 234);
-    
-    }
-    
-    .lower {
-        border: 3px solid #38761d ; /*  Under Underrubrikerna, glasögon */
-        background-color: rgb(250, 240, 234);
-        display: flex;
-        flex-direction: row;
-        justify-content:space-evenly;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 5px;
-        grid-row: 3/4;
-        grid-column: 1/2;
-    
-    }
-    
-    .glasogonlador {
-        border:2px solid #cccccc;
-        background-color: white;
-        margin-top: 10px;
-        margin-left: 70px;
-        margin-right: 70px;
-        
-    }
-    .pristext {
-        text-align: center;
-        margin-right: 50%;
-        background-color:  rgb(250, 240, 234);
-    }
-    
-    article img {
-        max-width: 200px;
-        height:auto
-        
-    }
-    article h2 {
-        border: 2px solid #274e13;
-        margin-left: 10%;
-        background-color: rgb(250, 240, 234);
-    }
-
 }
